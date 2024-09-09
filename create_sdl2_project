@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TEMPLATE_DIR=/home/goat/Documents/SDL2_template
+TEMPLATE_DIR=/usr/local/bin/SDL2_template
 PROJECT_NAME=$1
 DEST_DIR=$(pwd)/$PROJECT_NAME
 

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+TEMPLATE_DIR=/home/goat/Documents/SDL2_template
+PROJECT_NAME=$1
+DEST_DIR=$(pwd)/$PROJECT_NAME
+
+if [ -z "$PROJECT_NAME" ]; then
+    echo "Please provide a project name."
+    exit 1
+fi
+
+mkdir -p "$DEST_DIR"
+cp -r "$TEMPLATE_DIR/." "$DEST_DIR"
+
+cd "$DEST_DIR"
+
+
